@@ -26,6 +26,9 @@ This endpoint a json request body with string data. Example:
 ```bash
 $ yarn install
 ```
+Create an .env file and add environment variables
+OPENAI_API_KEY=<your api key>
+CHROMA_URL=<chroma url> (http://localhost:8000 if docker-compose is used)
 
 ## Running the app
 
