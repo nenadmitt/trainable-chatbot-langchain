@@ -4,15 +4,22 @@ A simple proof of concept NestJS application which uses OpenAI LLM and LangChain
 
 App exposes two endpoints 
 
+## /ask
 ```
-  {URL}/ask?question=<Your question here>
+  GET {APP_URL}/ask?question=<Your question here>
 ```
 Sends a question to LLM and returns a response
 
+## /train
 ```
-  {URL}/train
+  POST {APP_URL}/train
 ```
-Sending a data to model so he can respond based on the data.
+This endpoint a json request body with string data. Example:
+```
+  {
+    "data": "This is data to be feed to llm"
+  }
+```
 
 ## Installation
 
